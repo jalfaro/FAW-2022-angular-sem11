@@ -1,0 +1,28 @@
+<div class="formulario" [formGroup]="formGroup">
+    <mat-form-field class="controles" appearance="outline">
+        <mat-label>Id</mat-label>
+        <mat-icon matPrefix>lock_open</mat-icon>
+        <input type="number" matInput formControlName="id">
+    </mat-form-field>
+
+    <mat-form-field class="controles" appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <mat-icon matPrefix>perm_identity</mat-icon>
+        <input type="text" matInput formControlName="nombre">
+    </mat-form-field>
+
+    <mat-form-field class="controles" appearance="outline">
+        <mat-label>Compañia</mat-label>
+        <mat-icon matPrefix>rocket_launch</mat-icon>
+        <input type="text" matInput formControlName="compania">
+    </mat-form-field>
+
+    <mat-form-field class="controles" appearance="outline">
+        <mat-label>Imagen</mat-label>
+        <mat-icon matPrefix>image</mat-icon>
+        <input type="text" matInput formControlName="imagen">
+    </mat-form-field>
+
+    <button class="controles" mat-raised-button color="primary" (click)="guardarPersonaje()">Guardar Personaje</button>
+    <button class="controles" mat-raised-button color="primary" (click)="verListado()">Ver Listado</button>
+</div>
